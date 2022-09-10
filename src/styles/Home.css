@@ -1,0 +1,36 @@
+.skeleton {
+    opacity: .7;
+    animation: skeleton-loading 700ms linear infinite alternate;
+}
+  
+.skeleton-title {
+    width: 30%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.skeleton-text {
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.skeleton-text:last-child {
+    width: 90%;
+}
+  
+@keyframes skeleton-loading {
+0% {
+    background-color: hsl(200, 20%, 70%);
+}
+
+100% {
+    background-color: hsl(200, 20%, 95%);
+}}
+
+.skeleton-img {
+    width: 160px;
+    height: 220px;
+    border-radius: 10px;
+}

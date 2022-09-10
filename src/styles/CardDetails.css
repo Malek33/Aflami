@@ -1,0 +1,229 @@
+.bigDiv-CardDetails{
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.right-aside{
+    position: absolute;
+    right: 0vw;
+    width: 35vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 10;
+    opacity: 0.7;
+    display: flex;
+}
+
+.posterImg {
+    width: 10vw;
+    height: 13vw;
+    object-fit:contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 3vw;
+}
+
+.hr-cardDetails {
+    background-color: white;
+    width: 30vw;
+    height: 0.2vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 20vw;
+}
+
+.desc {
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 5vh;
+    margin-top: 21vw;
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: left;
+    width: 29.8vw;
+    height: 15vh;
+    outline:none;
+    overflow:hidden;
+    font-size-adjust: 0.25;
+}
+
+.actors-field {
+  width: 35vw;
+  height: 30vh; 
+  position: absolute; 
+  bottom: 10vh
+}
+
+.movie-logo {
+  width: 10vw;
+  margin: 5vh;
+}
+
+br{
+    padding: 0vh;
+    margin: 0vh;
+}
+
+.left-aside-title{
+  color: white;
+  text-shadow: 0 0 10px black; 
+  position: absolute; 
+  top: 35vh; 
+  left: 4vw;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    margin-top: 10vh;
+    left: 1;
+    top: 0;
+    height: 65%;
+    width: 70%;
+    position: absolute;
+  }
+
+  .slider-test {
+    width: 90vw;
+  }
+
+  .slider-test2 {
+    width: 55vw;
+  }
+
+  .skeleton {
+    opacity: .7;
+    animation: skeleton-loading 700ms linear infinite alternate;
+}
+  
+.skeleton-title {
+    width: 30%;
+    height: 5vH;
+    border-radius: 10px;
+}
+
+.skeleton-text {
+    width: 50%;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.skeleton-text:last-child {
+    width: 20%;
+}
+  
+@keyframes skeleton-loading {
+0% {
+    background-color: hsl(200, 20%, 70%);
+}
+
+100% {
+    background-color: hsl(200, 20%, 95%);
+}}
+
+.skeleton-img {
+    width: 160px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+  @media screen and (max-width: 768px) {
+    .bigDiv-CardDetails{
+      display: block;
+      height: auto;
+      width: auto;
+    }
+    .right-aside{
+      position: static !important;
+      width: auto !important;
+      display: flex;
+      flex-direction: column;
+      padding-top: 25vh;
+    }
+    .posterImg {
+      width: 200px;
+      height: 200px;
+      position: static;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      margin-top: 3vw;
+      
+    }
+    .hr-cardDetails{
+      position: static !important;
+      margin: 10px auto;
+      width: 80vw;
+    }
+    .desc{
+      position: static;
+      margin: 6px auto;
+      font-size: 15px;
+      width: 75vw;
+      padding-bottom: 20vh;
+    }
+    .actors-field{
+      width: auto;
+      height: auto;
+      position: static;
+      bottom: 0;
+      margin: 10px;
+      padding-bottom: 10vh;
+    }
+    .movie-logo{
+      position: absolute;
+      top: 7vh;
+      margin: 2vh;
+      width: 20vw;
+      z-index: 11;
+    }
+    .left-aside-title{
+      position: absolute;
+      top: 12vh;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    .left-aside-similar-movies{
+      position: static !important;
+      width: auto !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 22vh;
+    }
+    .left-aside-similar-movies h1{
+      display: none;
+    }
+    .video-responsive iframe{
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      margin: 0;
+    }
+
+  }
+    

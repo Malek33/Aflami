@@ -1,0 +1,39 @@
+.movie-title {
+    margin-top: 0px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    user-select: none;
+}
+
+.rate-things {
+    position: relative;
+}
+
+.ReactStars {
+    margin-top: -20px;
+}
+
+.rating {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.card-movietype{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: teal;
+    padding: 0px 5px 0px 5px;
+    border-radius: 10px;
+}

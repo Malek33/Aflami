@@ -89,7 +89,7 @@ function MovieGender({match}) {
   let history = useHistory();
     const handlePageChange = (data) => {
       console.log(data.selected+1)
-      history.push(`/${match.params.movieGender}/${data.selected+1}`)
+      history.push(`/${match.params.mediaType}/${match.params.movieGender}/${data.selected+1}`)
       setTimeout( () => window.location.reload() , 1)
     }
   
@@ -115,8 +115,8 @@ function MovieGender({match}) {
         nextLabel=">>"
         breakLabel="..."
         pageCount={page}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={3}
+        marginPagesDisplayed={1}
+        pageRangeDisplayed={1}
         onPageChange={handlePageChange}
         containerClassName={'pagination text-secondary'}
         pageClassName={'page-item text-secondary'}
@@ -127,7 +127,7 @@ function MovieGender({match}) {
         nextLinkClassName={'page-item text-secondary'}
         breakLinkClassName={'page-link text-secondary'}
         activeClassName={'active text-secondary'}
-        forcePage={ currentPage }
+        forcePage={ match.params.page }
         /> : null }
     </div>
   </div>

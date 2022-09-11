@@ -193,7 +193,7 @@ const cardDetailsHome = <div>
 
 {/* player ma 5ir 'https://autoembed.to' */}
 <div style={{ display: 'flex', justifyContent: 'center' }} className="video-responsive">
-  {/* <iframe
+  <iframe
     width="853vw"
     height="480vh"
     src={dataStream}
@@ -201,7 +201,7 @@ const cardDetailsHome = <div>
     allowFullScreen
     title="Embedded youtube"
     onLoad={()=> setTimeout( console.clear() , 1)}
-  /> */}
+  />
 </div>
   </div>
 
